@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RecyclerViewQuestion</string>
+    <string name="startTest">Начать итоговый тест</string>
+</resources>

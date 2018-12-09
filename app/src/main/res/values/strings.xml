@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">RecyclerViewQuestion</string>
     <string name="startTest">Начать итоговый тест</string>
+    <string name="about">About</string>
+    <string name="Pay">Заплатите налоги</string>
+    <string name="NextQuestion">Далее</string>
+    <string name="TextResult">Ваш результат:</string>
 </resources>

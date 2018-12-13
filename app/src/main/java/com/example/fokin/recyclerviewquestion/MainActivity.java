@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         FragmentQuestion fragmentQuestion = new FragmentQuestion();
         FragmentResult fragmentResult = new FragmentResult();
         /**Счетчик вопросов и переключение на фрагмент с результатом теста**/
-        if(count < 0) {
+        if(count == 1) {
             FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.add(R.id.frame_fragment, fragmentQuestion);
             fragmentTransaction.commit();

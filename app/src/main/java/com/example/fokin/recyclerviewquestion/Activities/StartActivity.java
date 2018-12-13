@@ -1,14 +1,15 @@
-package com.example.fokin.recyclerviewquestion;
+package com.example.fokin.recyclerviewquestion.Activities;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.Window;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.example.fokin.recyclerviewquestion.Activities.MainActivity;
+import com.example.fokin.recyclerviewquestion.R;
 
 public class StartActivity extends AppCompatActivity {
 

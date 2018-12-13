@@ -1,8 +1,7 @@
-package com.example.fokin.recyclerviewquestion;
+package com.example.fokin.recyclerviewquestion.Adapters;
 
 
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,13 +9,17 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
+import com.example.fokin.recyclerviewquestion.Enity.Answer;
+import com.example.fokin.recyclerviewquestion.Enity.Question;
+import com.example.fokin.recyclerviewquestion.R;
+
 import java.util.List;
 
     public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
         private LayoutInflater inflater;
-        private List<Question.Answer> answers;
+        private List<Answer> answers;
 
-        DataAdapter(Context context, List<Question.Answer> answers){
+        public DataAdapter(Context context, List<Answer> answers){
             this.answers = answers;
             this.inflater = LayoutInflater.from(context);
         }
@@ -45,7 +48,7 @@ import java.util.List;
 
         @Override
         public void onBindViewHolder(DataAdapter.ViewHolder holder, int position) {
-            Question.Answer answer = answers.get(position);
+            Answer answer = answers.get(position);
             holder.textAnswer.setText(answer.getText());
         }
 

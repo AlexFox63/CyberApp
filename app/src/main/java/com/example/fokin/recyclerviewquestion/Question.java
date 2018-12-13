@@ -1,6 +1,7 @@
 package com.example.fokin.recyclerviewquestion;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Question {
 
@@ -23,6 +24,10 @@ public class Question {
 
     public void setTextQuestion(String textQuestion) {
         this.textQuestion = textQuestion;
+    }
+
+    public List<Question> getQuestions() {
+        
     }
 
     public static class Answer {

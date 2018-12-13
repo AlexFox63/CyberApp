@@ -21,8 +21,8 @@ public class JSONHelper {
             fileInputStream = context.openFileInput(FILE_NAME);
             streamReader = new InputStreamReader(fileInputStream);
             Gson gson = new Gson();
-            DataItems dataItems = gson.fromJson(streamReader, DataItems.class);
-            return  dataItems.getQuestions();
+            Question question = gson.fromJson(streamReader, Question.class);
+            return question.getQuestions();
         }
         catch (IOException ex){
             ex.printStackTrace();
@@ -45,16 +45,5 @@ public class JSONHelper {
         }
 
         return null;
-    }
-
-    private static class DataItems {
-        private List<Question> questions;
-
-        List<Question> getQuestions() {
-            return questions;
-        }
-        void setQuestions(List<Question> questions) {
-            this.questions = questions;
-        }
     }
 }
